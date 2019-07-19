@@ -1,10 +1,8 @@
 // Navigation code here
 nav {
-    height: 80px;
-    padding: .5% 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100px;
+    padding: 1% 0%;
+    .flex(column, space-between);
     align-items: center;
     background: @main-border-color;
 
@@ -14,11 +12,10 @@ nav {
 
     .links {
         width: 20%;
-        display: flex;
-        justify-content: space-between;
+        .flex(row, space-between);      
         a {
             text-decoration: none;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             color: black;
         }
     }
