@@ -1,1 +1,36 @@
 // Navigation code here
+nav {
+    height: 100px;
+    .flex(column, space-around);
+    align-items: center;
+    background: @nav-bg;
+    border: 2px solid @nav-border;
+    opacity: 0.9;
+    // fixed styling
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+
+    h1{
+        font-size: 3.5rem;
+        padding-bottom: 8px;
+        color: @nav-font;
+        opacity: 1;
+    }
+
+    .links {
+        width: 380px;
+        @media @phone {
+            width: 100%;
+            padding: 0% 5%;
+        }
+        .flex(row, space-between);      
+        a {
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: @nav-font;
+        }
+    }
+}
